@@ -14,13 +14,11 @@
 		C5AB64F01523DE21003529C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AB64EF1523DE21003529C3 /* main.m */; };
 		C5AB64F41523DE21003529C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AB64F31523DE21003529C3 /* AppDelegate.m */; };
 		C5AB64F71523DE21003529C3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AB64F61523DE21003529C3 /* FirstViewController.m */; };
-		C5AB64F91523DE21003529C3 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AB64F81523DE21003529C3 /* first.png */; };
-		C5AB64FB1523DE21003529C3 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AB64FA1523DE21003529C3 /* first@2x.png */; };
 		C5AB64FE1523DE21003529C3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AB64FD1523DE21003529C3 /* SecondViewController.m */; };
-		C5AB65001523DE21003529C3 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AB64FF1523DE21003529C3 /* second.png */; };
-		C5AB65021523DE21003529C3 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AB65011523DE21003529C3 /* second@2x.png */; };
 		C5AB65051523DE21003529C3 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5AB65031523DE21003529C3 /* FirstViewController.xib */; };
 		C5AB65081523DE21003529C3 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5AB65061523DE21003529C3 /* SecondViewController.xib */; };
+		C5AB650F1523E137003529C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AB650E1523E137003529C3 /* CoreLocation.framework */; };
+		C5C9813D15253C07008F30AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C9813C15253C07008F30AC /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,22 +26,21 @@
 		C5AB64E31523DE21003529C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C5AB64E51523DE21003529C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5AB64E71523DE21003529C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C5AB64EB1523DE21003529C3 /* LocationAppAR-Info.plist */ = {isa = PBXFileReference; path = "LocationAppAR-Info.plist"; sourceTree = "<group>"; };
+		C5AB64EB1523DE21003529C3 /* LocationAppAR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationAppAR-Info.plist"; sourceTree = "<group>"; };
 		C5AB64ED1523DE21003529C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5AB64EF1523DE21003529C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C5AB64F11523DE21003529C3 /* LocationAppAR-Prefix.pch */ = {isa = PBXFileReference; path = "LocationAppAR-Prefix.pch"; sourceTree = "<group>"; };
-		C5AB64F21523DE21003529C3 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5AB64F11523DE21003529C3 /* LocationAppAR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationAppAR-Prefix.pch"; sourceTree = "<group>"; };
+		C5AB64F21523DE21003529C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5AB64F31523DE21003529C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C5AB64F51523DE21003529C3 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		C5AB64F51523DE21003529C3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		C5AB64F61523DE21003529C3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		C5AB64F81523DE21003529C3 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		C5AB64FA1523DE21003529C3 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		C5AB64FC1523DE21003529C3 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		C5AB64FC1523DE21003529C3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		C5AB64FD1523DE21003529C3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		C5AB64FF1523DE21003529C3 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		C5AB65011523DE21003529C3 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		C5AB65041523DE21003529C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		C5AB65071523DE21003529C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		C5AB650E1523E137003529C3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C5C9810715253103008F30AC /* LocationAppAR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationAppAR.entitlements; sourceTree = "<group>"; };
+		C5C9813C15253C07008F30AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C9813D15253C07008F30AC /* MapKit.framework in Frameworks */,
+				C5AB650F1523E137003529C3 /* CoreLocation.framework in Frameworks */,
 				C5AB64E41523DE21003529C3 /* UIKit.framework in Frameworks */,
 				C5AB64E61523DE21003529C3 /* Foundation.framework in Frameworks */,
 				C5AB64E81523DE21003529C3 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +79,8 @@
 		C5AB64E21523DE21003529C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5C9813C15253C07008F30AC /* MapKit.framework */,
+				C5AB650E1523E137003529C3 /* CoreLocation.framework */,
 				C5AB64E31523DE21003529C3 /* UIKit.framework */,
 				C5AB64E51523DE21003529C3 /* Foundation.framework */,
 				C5AB64E71523DE21003529C3 /* CoreGraphics.framework */,
@@ -90,16 +91,13 @@
 		C5AB64E91523DE21003529C3 /* LocationAppAR */ = {
 			isa = PBXGroup;
 			children = (
+				C5C9810715253103008F30AC /* LocationAppAR.entitlements */,
 				C5AB64F21523DE21003529C3 /* AppDelegate.h */,
 				C5AB64F31523DE21003529C3 /* AppDelegate.m */,
 				C5AB64F51523DE21003529C3 /* FirstViewController.h */,
 				C5AB64F61523DE21003529C3 /* FirstViewController.m */,
-				C5AB64F81523DE21003529C3 /* first.png */,
-				C5AB64FA1523DE21003529C3 /* first@2x.png */,
 				C5AB64FC1523DE21003529C3 /* SecondViewController.h */,
 				C5AB64FD1523DE21003529C3 /* SecondViewController.m */,
-				C5AB64FF1523DE21003529C3 /* second.png */,
-				C5AB65011523DE21003529C3 /* second@2x.png */,
 				C5AB65031523DE21003529C3 /* FirstViewController.xib */,
 				C5AB65061523DE21003529C3 /* SecondViewController.xib */,
 				C5AB64EA1523DE21003529C3 /* Supporting Files */,
@@ -169,10 +167,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5AB64EE1523DE21003529C3 /* InfoPlist.strings in Resources */,
-				C5AB64F91523DE21003529C3 /* first.png in Resources */,
-				C5AB64FB1523DE21003529C3 /* first@2x.png in Resources */,
-				C5AB65001523DE21003529C3 /* second.png in Resources */,
-				C5AB65021523DE21003529C3 /* second@2x.png in Resources */,
 				C5AB65051523DE21003529C3 /* FirstViewController.xib in Resources */,
 				C5AB65081523DE21003529C3 /* SecondViewController.xib in Resources */,
 			);
@@ -273,6 +267,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationAppAR/LocationAppAR-Prefix.pch";
 				INFOPLIST_FILE = "LocationAppAR/LocationAppAR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -284,6 +279,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationAppAR/LocationAppAR-Prefix.pch";
 				INFOPLIST_FILE = "LocationAppAR/LocationAppAR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -308,6 +304,7 @@
 				C5AB650D1523DE21003529C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

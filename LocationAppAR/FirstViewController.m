@@ -14,24 +14,55 @@
 
 @implementation FirstViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
-    }
-    return self;
-}
-							
+@synthesize locationTextView = _locationTextView;
+
 - (void)viewDidLoad
 {
+    [self startStandardUpdates];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)startStandardUpdates
+{
+    
+    
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+    locationManager.distanceFilter = 500;
+    
+    [locationManager startUpdatingLocation];
+    
+    
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    
+    NSDate *eventDate = newLocation.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    
+    if (abs(howRecent) <15.0 ) 
+    
+    {
+        
+        self.locationTextView.text = [NSString stringWithFormat:@"latitude %+.6f, longitude %+.6f\n", newLocation.coordinate.latitude, newLocation.coordinate.longitude];
+
+    } else {
+        
+         self.locationTextView.text = @"Old Update";
+    }
+    
+   
+    
+    
+}
+
+
 - (void)viewDidUnload
 {
+    self.locationTextView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
